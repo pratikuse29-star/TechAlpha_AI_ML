@@ -1,9 +1,31 @@
+# try:
+#     num = 10/0
+#     print("In Try Block")
+# except Arithmatic Exception as e:
+#     print("Exception is->",e)
+# else:
+#     print("Code Running....")
+# finally:
+#     print("Always Runs...")
+
 try:
-    num = 10/0
-    print("In Try Block")
-except Arithmatic Exception as e:
-    print("Exception is->",e)
+    result = 10 / 0
+    print("Result:", result)
+
+except ZeroDivisionError:
+    print("Error occurred!")
+
+except TypeError:
+    print("Error occurred!")
+
+except Exception as e:
+    print("E is->", e)
+
 else:
-    print("Code Running....")
+    print("Successful execution — NO errors!")
+
 finally:
-    print("Always Runs...")
+    print("Finally block ran")
+
+
+
